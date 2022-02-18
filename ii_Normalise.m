@@ -58,7 +58,7 @@ for i = 1:length(subj)
     matlabbatch{1}.spm.spatial.normalise.estwrite.eoptions.samp = 3;
     matlabbatch{1}.spm.spatial.normalise.estwrite.woptions.bb = [-78 -112 -70
                                                                  78 76 85];
-    matlabbatch{1}.spm.spatial.normalise.estwrite.woptions.vox = [2 2 2];   %Resamples Normalised images to 2x2x2mm voxels.  Alternative: [1 1 1] keeps 1mm resolution
+    matlabbatch{1}.spm.spatial.normalise.estwrite.woptions.vox = [1 1 1];   %Resampled to 1mm resolution. Nb: normalised images in Evans et al., 2020 are at 2x2x2mm resolution
     matlabbatch{1}.spm.spatial.normalise.estwrite.woptions.interp = 4;
     matlabbatch{1}.spm.spatial.normalise.estwrite.woptions.prefix = 'w';    %File prefix for Normalised images. Can be changed as desired 
 
